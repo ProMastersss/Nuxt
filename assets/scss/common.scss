@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: $textColor;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.container {
+  margin: 10px;
+  padding: 10px;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+.rotate-enter-active,
+.rotate-leave-active {
+  transition: all 0.2s;
+}
+.rotate-enter-from,
+.rotate-leave-to {
+  opacity: 0;
+  transform: rotate3d(1, 1, 1, 15deg);
+}
